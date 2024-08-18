@@ -1,5 +1,3 @@
-# Nexus-Between-Corruption-and-Migration-in-Sri-Lanka
-
 # SLBFE Registration Map
 
 This repository contains a project for visualizing the total registration with the Sri Lanka Bureau of Foreign Employment (SLBFE) by districts for the year 2022. The project includes a static map and an interactive map created using R.
@@ -51,8 +49,6 @@ Run the R script (`script.R`) to generate the static and interactive maps. The i
 
 - **Package Citation**: Talagala, T. S. (2023). *ceylon: Creating Maps of Sri Lanka Administrative Regions, Rivers and Streams*. Zenodo. [https://doi.org/10.5281/zenodo.10432141](https://doi.org/10.5281/zenodo.10432141)
   
-- **Working Paper**: Talagala, T. S. (2024). *ceylon: An R package for plotting the maps of Sri Lanka*. arXiv preprint arXiv:2401.02467.
-
 ## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for more details.
