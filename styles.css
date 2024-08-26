@@ -53,6 +53,15 @@ nav ul li a:hover {
     color: #e0e0e0;
 }
 
+}
+#collapsible-nav .nav-item a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
 h1, h2, h3 {
     color: var(--primary-color);
 }
