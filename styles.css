@@ -330,3 +330,45 @@ iframe {
         height: 400px;
     }
 }
+
+.figure-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.figure {
+    flex-basis: calc(50% - 1rem);
+    margin-bottom: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.figure:hover {
+    transform: scale(1.05);
+}
+
+.figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.figure p {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.instruction {
+    text-align: center;
+    font-style: italic;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .figure {
+        flex-basis: 100%;
+    }
+}
