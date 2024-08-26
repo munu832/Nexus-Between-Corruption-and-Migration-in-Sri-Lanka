@@ -62,4 +62,12 @@ imagePaths.forEach(path => {
     imageGallery.appendChild(img);
 });
 
+// Key Figures functionality
+const figures = document.querySelectorAll('.figure img');
 
+figures.forEach(figure => {
+    figure.addEventListener('click', function() {
+        const link = this.getAttribute('data-link');
+        window.location.href = link;
+    });
+});
