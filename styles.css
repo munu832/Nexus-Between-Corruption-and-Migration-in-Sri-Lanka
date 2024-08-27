@@ -113,8 +113,8 @@ section {
 }
 
 #figures .figure-shape {
-    width: 276px;
-    height: 276px;
+    width: auto;
+    height: auto;
     margin: 0 auto;
     overflow: hidden;
     shape-outside: polygon(10% 90%, 11% 89%, 82% 17%, 83% 18%);
