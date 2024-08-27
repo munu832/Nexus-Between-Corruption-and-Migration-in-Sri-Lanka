@@ -48,7 +48,12 @@
     <!-- Header and Navigation -->
     <header>
         <nav>
-            <ul>
+            <button id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="nav-menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#figures">Figures</a></li>
@@ -81,18 +86,21 @@
             <h2>Key Figures</h2>
             <div class="figure-container">
                 <div class="figure">
-                    <img src="migration_phases.jpg" alt="Key Phases of Migration" data-full="migration_phases.jpg" data-link="migration_phases.html">
+                    <div class="figure-shape">
+                        <img src="migration_phases.jpg" alt="Key Phases of Migration" data-full="migration_phases.jpg" data-link="migration_phases.html">
+                    </div>
                     <p>Key Phases of Migration and Corresponding Potential Corrupt Practices</p>
                 </div>
                 <div class="figure">
-                    <img src="sri_lanka_map.jpg" alt="Map of Sri Lanka" data-full="sri_lanka_map.jpg" data-link="sri_lanka_map.html">
+                    <div class="figure-shape">
+                        <img src="sri_lanka_map.jpg" alt="Map of Sri Lanka" data-full="sri_lanka_map.jpg" data-link="sri_lanka_map.html">
+                    </div>
                     <p>Map of Sri Lanka Showcasing District-Wise SLBFE Registered Migrants in 2022</p>
                 </div>
             </div>
             <p class="instruction">Click on an image to view the full page</p>
         </section>
 
-        
         <!-- Gallery Section -->
         <section id="gallery">
             <div class="container">
