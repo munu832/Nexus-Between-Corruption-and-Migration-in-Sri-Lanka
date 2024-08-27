@@ -41,15 +41,32 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Image Gallery Initialization
+    // Image Gallery Initialization with Lightbox
     const imageGallery = document.getElementById('image-gallery');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightbox-image');
+    const closeLightbox = document.querySelector('.close-lightbox');
     const imagePaths = ["interview1.jpg", "interview2.jpg", "interview3.jpg"]; // Replace with actual paths
+
     imagePaths.forEach(path => {
         const img = document.createElement('img');
         img.src = path;
         img.alt = 'Interview Photo';
         img.loading = 'lazy';
+        img.addEventListener('click', () => {
+            lightboxImage.src = path;
+            lightbox.style.display = 'block';
+        });
+        img.addEventListener('error', () => {
+            console.error(`Failed to load image: ${path}`);
+            img.src = 'placeholder.jpg'; // Replace with a placeholder image
+            img.alt = 'Image not available';
+        });
         imageGallery.appendChild(img);
+    });
+
+    closeLightbox.addEventListener('click', () => {
+        lightbox.style.display = 'none';
     });
 
     // Smooth scrolling for navigation links
@@ -81,6 +98,34 @@ document.addEventListener("DOMContentLoaded", function () {
         const isClickInsideNav = navMenu.contains(event.target) || navToggle.contains(event.target);
         if (!isClickInsideNav && navMenu.classList.contains('active')) {
             navMenu.classList.remove('active');
+        }
+    });
+
+    // Back to top button
+    const backToTopButton = document.getElementById("back-to-top");
+
+    window.onscroll = function() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    };
+
+    backToTopButton.addEventListener("click", function() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            if (lightbox.style.display === 'block') {
+                lightbox.style.display = 'none';
+            }
+            if (navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active');
+            }
         }
     });
 });
