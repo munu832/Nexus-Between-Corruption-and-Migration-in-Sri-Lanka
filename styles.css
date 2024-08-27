@@ -114,11 +114,17 @@ section {
 
 #figures .figure-shape {
     width: auto;
-    height: auto;
-    margin: 0 auto;
     overflow: hidden;
     shape-outside: polygon(10% 90%, 11% 89%, 82% 17%, 83% 18%);
     clip-path: polygon(10% 90%, 11% 89%, 82% 17%, 83% 18%);
+}
+
+.card {
+    backdrop-filter: blur(12px) saturate(50%);
+    -webkit-backdrop-filter: blur(12px) saturate(50%);
+    background-color: rgba(17, 25, 40, 0.23);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
 #figures .figure img {
