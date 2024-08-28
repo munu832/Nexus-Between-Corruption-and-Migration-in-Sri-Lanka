@@ -2,6 +2,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const loadingScreen = document.getElementById('loading');
     loadingScreen.style.display = 'none';
 
+            // JavaScript to hide the loading screen once the page is fully loaded
+        window.addEventListener('load', function() {
+            document.getElementById('loading').style.opacity = '0';
+            setTimeout(function() {
+                document.getElementById('loading').style.display = 'none';
+            }, 500);
+        });
+
     // Navigation toggle
     const navToggle = document.getElementById('nav-toggle');
     const navMenu = document.getElementById('nav-menu');
