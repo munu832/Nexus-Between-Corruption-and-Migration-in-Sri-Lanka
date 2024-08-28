@@ -11,18 +11,19 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Kavindu Munugoda</title>
+    <title>Nexus Between Corruption and Migration in Sri Lanka</title>
+    <meta name="keywords" content="Kavindu Munugoda, corruption, migration, Sri Lanka, research">
     <!-- Open Graph meta tags -->
-    <meta property="og:title" content="Dr. Kavindu Munugoda">
-    <meta property="og:description" content="Personal website of Dr. Kavindu Munugoda">
-    <meta property="og:image" content="https://munu832.github.io/DrKavinduMunugoda/logo.jpeg">
-    <meta property="og:url" content="https://munu832.github.io/DrKavinduMunugoda/">
+    <meta property="og:title" content="Nexus Between Corruption and Migration in Sri Lanka">
+    <meta property="og:description" content="Nexus Between Corruption and Migration in Sri Lanka by Dr. Kavindu Munugoda">
+    <meta property="og:image" content="https://munu832.github.io/Nexus-Between-Corruption-and-Migration-in-Sri-Lanka/logo.jpeg">
+    <meta property="og:url" content="https://munu832.github.io/Nexus-Between-Corruption-and-Migration-in-Sri-Lanka/">
     <meta property="og:type" content="website">
     <!-- Twitter Card meta tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Dr. Kavindu Munugoda">
-    <meta name="twitter:description" content="Personal website of Dr. Kavindu Munugoda">
-    <meta name="twitter:image" content="https://munu832.github.io/DrKavinduMunugoda/logo.jpeg">
+    <meta name="twitter:title" content="Nexus Between Corruption and Migration in Sri Lanka">
+    <meta name="twitter:description" content="Nexus Between Corruption and Migration in Sri Lanka by Dr. Kavindu Munugoda">
+    <meta name="twitter:image" content="https://munu832.github.io/Nexus-Between-Corruption-and-Migration-in-Sri-Lanka/logo.jpeg">
    
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
@@ -41,12 +42,13 @@
         <img src="logo.jpeg" alt="Loading...">
     </div>
 
-    <header>
+<header>
         <nav>
             <ul id="nav-menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#figures">Figures</a></li>
+                <li><a href="#slideshow">Gallery</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -72,13 +74,32 @@
                 <h2>Key Figures</h2>
                 <div class="figure-container">
                     <div class="figure">
-                        <img src="migration_phases.jpg" alt="Key Phases of Migration" data-full="migration_phases.jpg" data-link="migration_phases.html">
+                        <img src="migration_phases.jpg" alt="Key Phases of Migration" data-full="migration_phases.jpg">
                         <p>Key Phases of Migration and Corresponding Potential Corrupt Practices</p>
                     </div>
                     <div class="figure">
-                        <img src="sri_lanka_map.jpg" alt="Map of Sri Lanka" data-full="sri_lanka_map.jpg" data-link="sri_lanka_map.html">
+                        <img src="sri_lanka_map.jpg" alt="Map of Sri Lanka" data-full="sri_lanka_map.jpg">
                         <p>Map of Sri Lanka Showcasing District-Wise SLBFE Registered Migrants in 2022</p>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="slideshow" class="glassmorphism">
+            <div class="container">
+                <h2>Image Gallery</h2>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="image1.jpg" alt="Slideshow Image 1">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="image2.jpg" alt="Slideshow Image 2">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="image3.jpg" alt="Slideshow Image 3">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 </div>
             </div>
         </section>
@@ -98,11 +119,11 @@
                         </div>
                     </div>
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/in/kavindu-munugoda-18436bb6/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://scholar.google.com/citations?user=9kfdQ4cAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i></a>
-                        <a href="https://orcid.org/0000-0003-2188-0249" target="_blank"><i class="fab fa-orcid"></i></a>
-                        <a href="https://www.researchgate.net/profile/Kavindu-Munugoda" target="_blank"><i class="fab fa-researchgate"></i></a>
-                        <a href="https://github.com/munu832" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/kavindu-munugoda-18436bb6/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://scholar.google.com/citations?user=9kfdQ4cAAAAJ&hl=en" target="_blank" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                        <a href="https://orcid.org/0000-0003-2188-0249" target="_blank" aria-label="ORCID"><i class="fab fa-orcid"></i></a>
+                        <a href="https://www.researchgate.net/profile/Kavindu-Munugoda" target="_blank" aria-label="ResearchGate"><i class="fab fa-researchgate"></i></a>
+                        <a href="https://github.com/munu832" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
             </div>
@@ -115,6 +136,14 @@
         </div>
     </footer>
 
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-image">
+    </div>
+
+    <button id="back-to-top" title="Back to top">↑</button>
+
     <script src="script.js"></script>
 </body>
 </html>
+
