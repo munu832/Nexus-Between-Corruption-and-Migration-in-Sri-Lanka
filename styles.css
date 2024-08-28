@@ -149,7 +149,7 @@ h2 {
 }
 
 #contact {
-        max-width: 60%;  
+       min-height: 200px;;  
     }
 
 .social-links {
