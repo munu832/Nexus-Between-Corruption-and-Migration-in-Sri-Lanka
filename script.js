@@ -20,32 +20,23 @@ document.addEventListener("DOMContentLoaded", function () {
             if (link) {
                 window.location.href = link;
             } else if (fullImageSrc) {
-                let modal = document.getElementById('image-modal');
-                if (!modal) {
-                    modal = document.createElement('div');
-                    modal.id = 'image-modal';
-                    modal.innerHTML = `
-                        <div class="modal-content">
-                            <span class="close-modal">&times;</span>
-                            <img id="modal-image" src="${fullImageSrc}" alt="Full Image">
-                        </div>
-                    `;
-                    document.body.appendChild(modal);
-                    document.querySelector('.close-modal').addEventListener('click', () => {
-                        modal.style.display = 'none';
-                    });
-                }
-                document.getElementById('modal-image').src = fullImageSrc;
-                modal.style.display = 'block';
+                let lightbox = document.getElementById('lightbox');
+                let lightboxImage = document.getElementById('lightbox-image');
+                lightboxImage.src = fullImageSrc;
+                lightbox.style.display = 'block';
             }
         });
     });
 
-    // Image Gallery Initialization with Lightbox
-    const imageGallery = document.getElementById('image-gallery');
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImage = document.getElementById('lightbox-image');
+    // Close lightbox
     const closeLightbox = document.querySelector('.close-lightbox');
+    const lightbox = document.getElementById('lightbox');
+    closeLightbox.addEventListener('click', () => {
+        lightbox.style.display = 'none';
+    });
+
+    // Image Gallery Initialization
+    const imageGallery = document.getElementById('image-gallery');
     const imagePaths = ["interview1.jpg", "interview2.jpg", "interview3.jpg"]; // Replace with actual paths
 
     imagePaths.forEach(path => {
@@ -65,10 +56,6 @@ document.addEventListener("DOMContentLoaded", function () {
         imageGallery.appendChild(img);
     });
 
-    closeLightbox.addEventListener('click', () => {
-        lightbox.style.display = 'none';
-    });
-
     // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -80,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Fade-in animation for sections
-    const fadeElements = document.querySelectorAll('.fade-in');
+    const fadeElements = document.querySelectorAll('.glassmorphism');
     const fadeInObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
