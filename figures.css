@@ -166,5 +166,7 @@ footer {
     
     #contact {
         max-width: 60%;  /* Adjust for smaller screens */
+    #contact {
+       min-height: 200px;;  
     }
 }
