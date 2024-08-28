@@ -148,6 +148,10 @@ h2 {
     color: var(--primary-color);
 }
 
+#contact {
+        max-width: 60%;  
+    }
+
 .social-links {
     display: flex;
     gap: 15px;
