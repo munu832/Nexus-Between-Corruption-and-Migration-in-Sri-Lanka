@@ -186,6 +186,7 @@ footer {
     color: var(--text-color);
     text-align: center;
     padding: 1rem 0;
+    margin-top: 2rem;
     position: relative;
     bottom: 0;
     width: 100%;
