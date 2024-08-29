@@ -3,11 +3,25 @@ document.addEventListener('DOMContentLoaded', function() {
     function adjustIframeHeight() {
         const iframe = document.querySelector('iframe');
         const windowHeight = window.innerHeight;
+        const windowWidth = window.innerWidth;
         const minHeight = 400; // Minimum height for mobile devices
-        const maxHeight = 800; // Maximum height for larger screens
+        const maxHeight = 1200; // Increased maximum height for larger screens
 
-        // Set iframe height based on window size
-        iframe.style.height = Math.max(minHeight, Math.min(windowHeight * 0.7, maxHeight)) + 'px';
+        let targetHeight;
+
+        if (windowWidth <= 768) {
+            // For mobile devices
+            targetHeight = Math.max(minHeight, windowHeight * 0.7);
+        } else if (windowWidth <= 1024) {
+            // For tablets and small desktops
+            targetHeight = Math.max(minHeight, windowHeight * 0.8);
+        } else {
+            // For larger desktops
+            targetHeight = Math.max(minHeight, Math.min(windowHeight * 0.9, maxHeight));
+        }
+
+        // Set iframe height
+        iframe.style.height = targetHeight + 'px';
     }
 
     // Adjust iframe height on load and resize
