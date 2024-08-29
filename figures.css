@@ -29,7 +29,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    width: 90%; /* Added for better responsiveness */
+    width: 90%;
 }
 
 h1, h2 {
@@ -110,7 +110,7 @@ iframe {
 
 .contact-info {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     flex-wrap: wrap;
     justify-content: center; 
 }
@@ -130,8 +130,8 @@ iframe {
 .social-links {
     display: flex;
     gap: 1.5rem;
-    justify-content: center; /* Added for better centering */
-    margin-top: 1rem; /* Added for spacing */
+    justify-content: center;
+    margin-top: 0.5rem; 
 }
 
 .social-links a {
