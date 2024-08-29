@@ -1,12 +1,10 @@
-// figures.js
-
 document.addEventListener('DOMContentLoaded', function() {
     // Function to adjust iframe height
     function adjustIframeHeight() {
         const iframe = document.querySelector('iframe');
         const windowHeight = window.innerHeight;
         const minHeight = 400; // Minimum height for mobile devices
-        const maxHeight = 600; // Maximum height for larger screens
+        const maxHeight = 800; // Maximum height for larger screens
 
         // Set iframe height based on window size
         iframe.style.height = Math.max(minHeight, Math.min(windowHeight * 0.7, maxHeight)) + 'px';
