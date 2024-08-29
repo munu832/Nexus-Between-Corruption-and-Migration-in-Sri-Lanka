@@ -1,12 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Loading screen
     const loadingScreen = document.getElementById('loading');
-    window.addEventListener('load', function() {
+    
+    // Function to hide loading screen
+    function hideLoadingScreen() {
         loadingScreen.style.opacity = '0';
         setTimeout(function() {
             loadingScreen.style.display = 'none';
         }, 500);
-    });
+    }
+
+    // Try to hide loading screen immediately
+    hideLoadingScreen();
+
+    // If it's still visible after a short delay, force hide it
+    setTimeout(hideLoadingScreen, 2000);
 
     // Figures and Lightbox
     const figures = document.querySelectorAll('.figure img');
