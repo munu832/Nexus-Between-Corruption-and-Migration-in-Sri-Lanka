@@ -77,4 +77,11 @@ document.addEventListener("DOMContentLoaded", function () {
             lightbox.style.display = 'none';
         }
     });
+
+        // Initialize lord-icon elements
+    document.querySelectorAll('lord-icon').forEach(icon => {
+        icon.setAttribute('colors', 'primary:var(--lord-icon-primary),secondary:var(--lord-icon-secondary)');
+        icon.setAttribute('trigger', 'hover');
+    });
+});
 });
