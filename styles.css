@@ -133,7 +133,7 @@ h2 {
     border: 1px solid rgba(255, 255, 255, 0.1);
     max-width: 800px;
     margin: 0 auto;
-    min-height: auto; /* Changed from fixed height to auto */
+    min-height: auto; 
 }
 
 .contact-container {
@@ -146,8 +146,8 @@ h2 {
 .contact-info {
     display: flex;
     gap: 2rem;
-    flex-wrap: wrap; /* Added for better responsiveness */
-    justify-content: center; /* Added for better centering */
+    flex-wrap: wrap; 
+    justify-content: center; 
 }
 
 .contact-item {
@@ -165,8 +165,8 @@ h2 {
 .social-links {
     display: flex;
     gap: 1.5rem;
-    justify-content: center; /* Added for better centering */
-    margin-top: 1rem; /* Added for spacing */
+    justify-content: center; 
+    margin-top: 0.5rem; 
 }
 
 .social-links a {
