@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This repository contains a comprehensive analysis of the intricate relationship between corruption and migration patterns in Sri Lanka, focusing on data from the Sri Lanka Bureau of Foreign Employment (SLBFE) for the year 2022. The project utilizes R for data visualization and analysis, showcasing a variety of static and interactive visualizations to explore this complex issue.
+This repository contains a comprehensive analysis of the intricate relationship between corruption and migration patterns in Sri Lanka, focusing on data from the Sri Lanka Bureau of Foreign Employment (SLBFE) for the year 2022 and survey findings. The project utilizes R for data visualization and analysis, showcasing a variety of static and interactive visualizations to explore this complex issue.
 
 ### Key Features
 
@@ -13,16 +13,26 @@ This repository contains a comprehensive analysis of the intricate relationship 
 
 ## Repository Contents
 
-- `SLBFE_Registration_Map_Static.png`: Static map visualizing district-wise SLBFE registrations (2022)
-- `SLBFE_Registration_Map_Interactive.html`: Interactive map for exploring SLBFE registration data by district
-- `Key_Figures.png`: Visual representations of key migration phases and associated corrupt practices
-- `Collapsible_Tree.html`: Interactive visualization linking migration phases with potential corrupt practices
-- `script.R`: R script for generating all visualizations
-- `README.md`: This file, providing a comprehensive project overview
+- `index.html`: Main entry point for the web application
+- `Corruption-and-Migration-in-Sri-Lanka.R`: R script for data analysis and generation of visualizations
+- `Corruptions in Migration Cycle.html`: Interactive visualization of corruption risks in the migration cycle
+- `SLBFE Registration Map.html`: Interactive map showing SLBFE registration data
+- `sri_lanka_map.html`: Base map of Sri Lanka for visualizations
+- `migration_phases.html`: Visual representation of migration phases
+- `figures.css`, `styles.css`: CSS files for styling the web application
+- `figures.js`, `script.js`: JavaScript files for interactive elements
+- `logo.jpeg`, `migration_phases.jpg`, `sri_lanka_map.jpg`: Image assets used in the project
+- `LICENSE.md`: License information for the project
 
 ## Technical Details
 
 ### Dependencies
+
+### Technologies Used
+
+- **R**: For data analysis and generation of initial visualizations
+- **HTML/CSS/JavaScript**: For creating an interactive web application
+- **Leaflet.js**: For interactive map visualizations
 
 This project relies on the following R packages:
 
@@ -53,17 +63,21 @@ To set up the project environment:
    install.packages(c("ggplot2", "dplyr", "sf", "leaflet", "viridis", "scales", "collapsibleTree", "htmlwidgets"))
    ```
 
-## Usage Guide
+## Features
 
-1. Clone this repository to your local machine.
-2. Ensure all required packages are installed (see Installation section).
-3. Open and run `script.R` in your R environment to generate all visualizations.
+### Interactive Map
+The `SLBFE Registration Map.html` provides an interactive visualization of migration data across different regions of Sri Lanka.
 
-### Generating Visualizations
+### Migration Cycle Visualization
+`Corruptions in Migration Cycle.html` offers an interactive exploration of various stages in the migration process and associated corruption risks.
 
-- **Static Map**: Created using `ggplot2` and saved as a PNG file.
-- **Interactive Map**: Built with `leaflet` and exported as an HTML file for browser viewing.
-- **Collapsible Tree**: Generated using the `collapsibleTree` package, linking migration phases with corrupt practices.
+### Data Analysis
+The R script (`Corruption-and-Migration-in-Sri-Lanka.R`) contains the data analysis pipeline, including data cleaning, processing, and generation of visualizations.
+
+## Customization
+
+- Modify `styles.css` and `figures.css` to change the appearance of the web application.
+- Update `script.js` and `figures.js` to alter the interactive behavior of the visualizations.
 
 ## Data Sources
 
