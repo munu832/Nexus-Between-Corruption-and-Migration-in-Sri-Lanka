@@ -88,8 +88,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contributing
 
-We welcome contributions to this project! Please see our [CONTRIBUTING.md](CONTRIBUTING.md) file for guidelines on how to submit issues, feature requests, and pull requests.
+We welcome contributions to this project! 
 
 ## Contact
 
-For any questions or feedback regarding this project, please open an issue in this repository or contact the project maintainer at [your-email@example.com].
+For any questions or feedback regarding this project, please open an issue in this repository or contact the project maintainer at [kmunugoda@gmail.com].
